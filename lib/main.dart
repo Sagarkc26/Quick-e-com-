@@ -29,17 +29,23 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.brown[500],
-          leading: const Icon(
-            Icons.menu,
-            size: 35,
+          leading: IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.menu),
+            iconSize: 40,
           ),
-          title: const Text("Hello"),
-          actions: const [
+          title: const Text(
+            "Quick",
+            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+          ),
+          centerTitle: true,
+          actions: [
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 12),
-              child: Icon(
-                Icons.camera_alt_outlined,
-                size: 38,
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: IconButton(
+                onPressed: () {},
+                icon: const Icon(Icons.camera_alt_outlined),
+                iconSize: 40,
               ),
             ),
           ],
