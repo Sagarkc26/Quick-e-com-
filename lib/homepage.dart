@@ -15,11 +15,6 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.brown[400],
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.menu),
-          iconSize: 40,
-        ),
         title: const Text(
           "Quick",
           style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
@@ -30,7 +25,7 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.symmetric(horizontal: 12),
             child: IconButton(
               onPressed: () {},
-              icon: const Icon(Icons.camera_alt_outlined),
+              icon: const Icon(Icons.menu),
               iconSize: 40,
             ),
           ),
