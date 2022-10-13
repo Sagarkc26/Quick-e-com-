@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:randomui/gridview.dart';
+import 'package:randomui/searchbar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -32,7 +33,24 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       backgroundColor: Colors.grey[300],
-      body: const gridviewlist(),
+      body: Column(
+        children: const [
+          Padding(
+            padding: EdgeInsets.only(top: 10, left: 10, right: 10),
+            child: SearchBar(),
+          ),
+          Divider(),
+          Expanded(
+            child: gridviewlist(),
+          ),
+        ],
+      ),
+      bottomNavigationBar: NavigationBar(
+        destinations: const [
+          NavigationDestination(icon: Icon(Icons.home), label: "Home"),
+          NavigationDestination(icon: Icon(Icons.person), label: "Profile"),
+        ],
+      ),
     );
   }
 }

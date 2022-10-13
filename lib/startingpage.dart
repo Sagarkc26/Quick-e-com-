@@ -12,9 +12,17 @@ class _StartPageState extends State<StartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.grey,
+        title: const Text(
+          "Welcome to online shopping app",
+          style: TextStyle(color: Colors.white),
+        ),
+        centerTitle: true,
+      ),
       body: Container(
         child: Image.asset(
-          "images/online.jpg",
+          "images/shopping.png",
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
         ),
