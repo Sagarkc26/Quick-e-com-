@@ -55,7 +55,7 @@ class _gridviewlistState extends State<gridviewlist> {
               Title(
                 color: Colors.black,
                 child: const Text(
-                  "Jeans Pant",
+                  "Pants",
                   style: TextStyle(fontSize: 20),
                 ),
               )
@@ -76,7 +76,7 @@ class _gridviewlistState extends State<gridviewlist> {
               Title(
                 color: Colors.black,
                 child: const Text(
-                  "Kid's Tshirt",
+                  "Kid's Tshirts",
                   style: TextStyle(fontSize: 20),
                 ),
               )
@@ -89,14 +89,15 @@ class _gridviewlistState extends State<gridviewlist> {
                 height: 135,
                 width: 145,
                 decoration: BoxDecoration(
-                  color: Colors.teal,
+                  image: const DecorationImage(
+                      image: AssetImage("images/tshirt.jpg"), fit: BoxFit.fill),
                   borderRadius: BorderRadius.circular(15),
                 ),
               ),
               Title(
                 color: Colors.black,
                 child: const Text(
-                  "hello",
+                  "Kid's Tshirts",
                   style: TextStyle(fontSize: 20),
                 ),
               )
@@ -109,14 +110,15 @@ class _gridviewlistState extends State<gridviewlist> {
                 height: 135,
                 width: 145,
                 decoration: BoxDecoration(
-                  color: Colors.teal,
+                  image: const DecorationImage(
+                      image: AssetImage("images/pant.jpg"), fit: BoxFit.cover),
                   borderRadius: BorderRadius.circular(15),
                 ),
               ),
               Title(
                 color: Colors.black,
                 child: const Text(
-                  "hello",
+                  "Pants",
                   style: TextStyle(fontSize: 20),
                 ),
               )

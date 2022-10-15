@@ -48,6 +48,7 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: NavigationBar(
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: "Home"),
+          NavigationDestination(icon: Icon(Icons.shopping_cart), label: "Shop"),
           NavigationDestination(icon: Icon(Icons.person), label: "Profile"),
         ],
       ),
